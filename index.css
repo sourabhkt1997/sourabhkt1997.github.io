@@ -1,0 +1,290 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px; 
+    /* color: aliceblue; */
+    box-sizing: border-box;
+    
+}
+.nav-menu{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    position: absolute;
+    z-index: 1;
+    background-color:rgb(30, 29, 29);
+    width: 99%;
+    position: fixed;
+}
+.nav-menu-event{
+ background-color: rgb(240, 233, 233);
+}
+
+#nav-menu h4{
+    color: rgb(231, 238, 238);
+}
+#nav-ele{
+    display: flex;
+    justify-content: space-around;
+    /* border: 3px solid red; */
+    width: 50%;
+    margin-right:15%;
+    
+}
+.nav-ele{
+    margin-top:15px;
+    background-color: rgb(25, 22, 22);
+    
+}
+.nav-ele-title{
+    margin-top: 10px;
+    font-size: 30px;
+    /* border: 1px solid black; */
+}
+.title{
+    /* border: 1px solid; */
+    width: 20%;
+    text-align: center;
+    margin-left: 10%;
+    color: aquamarine ;
+}
+#wallpaper{
+    width: 100%;
+    height:100vh;
+}
+#home-img{
+    /* position: absolute; */
+    top: -10px;
+    /* border: 3px solid green; */
+    width: 100%;
+    height: 100vh;
+}
+#user-detail-name{
+  font-size: 40px;  
+  color:#FAFAFA
+    
+}
+#user-detail-intro{
+    font-size:30px;
+    color:#FAFAFA
+} 
+#intro{
+    position: absolute;
+    /* border: 1px solid green; */
+    top: 30%;
+    left: 17%;
+    
+}
+#hello{
+    font-size: 20px;
+    margin-right: 10px;
+    color: red
+}
+#iam{
+    font-size: 20px;
+    color:#F5F5F5
+}
+#nodejs{
+    color: rgb(234, 6, 6);
+}
+#resume-link-2{
+    background-color: rgb(245, 50, 50);
+    color: aliceblue;
+    /* border: 0px; */
+    border-radius: 5px;
+    text-align: center;
+    width: 70px;
+    height: 25px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+#about{
+    background-color: #3a2b27;
+    padding-top: 10px;
+}
+#about-sub{
+    /* border: 1px solid; */
+    display: flex;
+    background-color:#44281f;
+    width: 70%;
+    margin: auto;
+    justify-content: space-around;
+}
+#profile-image{
+    width: 20%;
+    /* border: 1px solid green; */
+    height: 300px;
+    margin-left:5%;
+    margin-top: 30px;
+}
+#profile-image img{
+    width: 100%
+}
+#about-words{
+    /* border: 1px solid green; */
+    width: 50%;
+    color: white;
+    margin-top: 30px;
+    height: 300px;
+}
+#aboutme{
+    font-size: 20px;
+    font-weight: bold;
+}
+#aboutme span{
+    color: red;
+}
+#iam-sourabh{
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: bold;
+}
+#iam-sourabh span{
+    color: red;
+    font-size: 37px;
+}
+#aboutme-des{
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: rgb(196, 199, 201);
+}
+
+.skill{
+    /* border: 1px solid; */
+    width: 70%;
+    margin: auto;
+    background-color: #44281f;
+}
+.myskill{
+    width: 50%;
+    /* border: 1px solid; */
+    margin: auto;
+}
+.myskill h1,p{
+    text-align: center;
+    color: white;
+}
+.myskill p{
+    font-size: 20px;
+    
+}
+.myskill h1>span{
+    color: red;  
+}
+
+.skill-div{
+    height: 400px;
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* border: 1px solid green; */
+    gap: 20px;   
+    background-color: rgb(162, 143, 143);
+}
+.skill-card {
+   /* border: 1px solid red; */
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   margin: 5px;
+   border-radius: 10px;
+}
+.skill-card img{
+    width:40%;
+   display: flex;
+   margin: auto;
+   /* border: 1px solid; */
+   margin-top: 20px;
+}
+.skills-card-name{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
+#skillmain{
+    background-color: #3a2b27;
+}
+
+/* prject....................................... */
+#project-div{
+    width: 100%;
+    /* border: 1px solid green; */
+}
+#projects{
+      /* border: 1px solid red; */
+      width: 70%;
+      display: flex;
+      margin: auto;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      justify-content: space-between;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      gap: 30px;   
+
+}
+#projects::-webkit-scrollbar{
+    display: none;
+}
+.project-card{
+   min-width:480px;
+    /* border: 1px solid blue; */
+    height: 300px;
+}
+.next-right{
+    position: absolute;
+    z-index: 3;
+    top: 1700px;
+    left: 86%;
+    /* border: 1px solid; */
+    width: 30px;
+    height: 30px;
+}
+.next-right img{
+    width: 100%;
+}
+.next-left{
+    position: absolute;
+    z-index: 3;
+    top: 1700px;
+    left:12%;
+    /* border: 1px solid; */
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+    
+}
+.next-left img{
+    width: 100%;
+}
+.project-imgdiv{
+    /* border: 1px solid; */
+    height:225px ;
+}
+.project-imgdiv img{
+    width: 100%;
+    /* border:1px solid green */
+}
+.project-description{
+    color: black;
+}
+.project-tech-stack{
+    color: black;
+}
+#stat{
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    margin: auto;
+    /* background-color: #3a2b27; */
+}
+
+#github-stat{
+    text-align: center;
+}
+#contact h1,p{
+     color: black;
+     text-align: left;
+}
+
