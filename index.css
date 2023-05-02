@@ -183,13 +183,13 @@
     gap: 20px;   
     background-color: rgb(162, 143, 143);
 }
-.skill-card {
+.skills-card {
    /* border: 1px solid red; */
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    margin: 5px;
    border-radius: 10px;
 }
-.skill-card img{
+.skills-card img{
     width:40%;
    display: flex;
    margin: auto;
