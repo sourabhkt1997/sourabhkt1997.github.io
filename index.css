@@ -143,7 +143,7 @@
     color: red;
     font-size: 37px;
 }
-#aboutme-des{
+#user-detail-intro{
     font-size: 17px;
     font-weight: bold;
     margin-top: 10px;
@@ -151,14 +151,14 @@
 }
 
 .skill{
-    /* border: 1px solid; */
+    border: 1px solid #44281f;
     width: 70%;
     margin: auto;
     background-color: #44281f;
 }
 .myskill{
     width: 50%;
-    /* border: 1px solid; */
+    /* border: 1px solid gold; */
     margin: auto;
 }
 .myskill h1,p{
@@ -182,14 +182,15 @@
     /* border: 1px solid green; */
     gap: 20px;   
     background-color: rgb(162, 143, 143);
+    margin-bottom: 30px;
 }
-.skills-card {
+.skill-card {
    /* border: 1px solid red; */
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    margin: 5px;
    border-radius: 10px;
 }
-.skills-card img{
+.skill-card img{
     width:40%;
    display: flex;
    margin: auto;
@@ -208,7 +209,14 @@
 /* prject....................................... */
 #project-div{
     width: 100%;
-    /* border: 1px solid green; */
+    border: 1px solid #3a2b27;
+    height: 450px;
+    background-color: #3a2b27;
+}
+#my-projects{
+    color: white;
+    /* border: 1px solid wheat; */
+    text-align: center;
 }
 #projects{
       /* border: 1px solid red; */
@@ -220,8 +228,7 @@
       justify-content: space-between;
       overflow-x: scroll;
       scroll-behavior: smooth;
-      gap: 30px;   
-
+      gap: 30px;
 }
 #projects::-webkit-scrollbar{
     display: none;
@@ -229,16 +236,17 @@
 .project-card{
    min-width:480px;
     /* border: 1px solid blue; */
-    height: 300px;
+    background-color: #F5F5F5;
 }
 .next-right{
     position: absolute;
     z-index: 3;
-    top: 1700px;
-    left: 86%;
+    top: 1750px;
+    left: 86.5%;
     /* border: 1px solid; */
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+     transform: rotate(180deg);
 }
 .next-right img{
     width: 100%;
@@ -246,12 +254,12 @@
 .next-left{
     position: absolute;
     z-index: 3;
-    top: 1700px;
-    left:12%;
+    top: 1750px;
+    left:11%;
     /* border: 1px solid; */
-    width: 30px;
-    height: 30px;
-    transform: rotate(180deg);
+    width: 40px;
+    height: 40px;
+   
     
 }
 .next-left img{
@@ -267,24 +275,127 @@
 }
 .project-description{
     color: black;
+    /* border: 1px solid; */
+    padding-left: 10px;
+    font-weight:500;
+    color: rgb(59, 56, 56);
+    margin-top: 10px;
+}
+.project-description>span{
+    padding-left: 10px;
 }
 .project-tech-stack{
     color: black;
+    /* border: 1px solid; */
+    padding-left: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.project-title{
+    /* border: 1px solid; */
+    padding-left: 10px;
+    font-size: 20px;
+    color: rgb(109, 5, 5);
+}
+.project-title>span{
+    font-size: 15px;
+    color: black;
+}
+.project-github-link>img{
+    width: 35px;
+    margin-top: 5px;
+    /* border: 1px solid; */
+    margin-left: 10px;
+}
+.project-deployed-link>img{
+    width: 32px;
+    /* border: 1px solid; */
+    margin-left: 10px;
+}
+
+/* git gub....................... */
+#githubs{
+    background-color: #3a2b27;
+    padding-bottom: 20px;
+}
+#githubs h1{
+    color: white;
+    padding-top: 20px;
 }
 #stat{
     /* border: 1px solid; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    width: 90%;
+    width: 85%;
     margin: auto;
-    /* background-color: #3a2b27; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    justify-content: space-around;
+    background-color: #44281f;
+    padding-bottom: 10px;
+}
+#stat div{
+    /* border: 1px solid red; */
+     margin: auto;
 }
 
 #github-stat{
     text-align: center;
 }
-#contact h1,p{
-     color: black;
+#git-calendar{
+    width: 70%;
+    margin: auto;
+    background-color:white;
+
+    
+}
+
+#contact{
+    background-color: #312f2f;
+}
+#contact-icon{
+    border: 1px solid white;
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+}
+#contact-icon a{
+    border: 1px solid green;
+    width: 50px;
+    height: 50px;
+}
+#contact-icon img{
+    width: 100%;
+}
+#contact-sub{
+    display: flex;
+}
+#form input,textarea{
+   background-color: rgb(190, 192, 195);
+   display:flex;
+   border-radius: 5px;
+}
+#form-div{
+    border: 1px solid yellow;
+}
+#form input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+#form :last-child{
+  margin-top: 10px;
+  width: 30%;
+  margin-left: 5px;
+  
+}
+
+
+
+#contact h1,p,h3{
+     color:black;
      text-align: left;
+     color: #F5F5F5;
 }
 
