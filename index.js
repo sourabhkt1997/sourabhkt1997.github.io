@@ -36,3 +36,23 @@ buttonLeft.addEventListener("click",()=>{
 // buttonLeft.onclick = function () {
 //   document.getElementById('container').scrollLeft -= 20;
 project.addEventListener('scroll', () => console.log(scrollY))
+
+gsheeturl="https://script.google.com/macros/s/AKfycbwZDgwQ7CJqm8WaVxYtCIlQpUZFBFRwHRVOse7qEaHSY72WRZ44neVF9sZNTvR01WTOpg/exec"
+
+let form = document.getElementById("form");
+form.addEventListener("submit", (e) => {
+    let button=document.getElementById("submit")
+    button.value="submitting"
+  e.preventDefault();
+  fetch(gsheeturl, { method: 'POST', body: new FormData(form) })
+    .then(res => res.json())
+    .then(data => {
+      console.log(data.message);
+      button.value="submitted"
+      setTimeout(()=>{
+        button.value="send message"
+        form.reset();
+      },1000)
+    });
+   
+});
