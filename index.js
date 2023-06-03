@@ -18,24 +18,24 @@ let ticking = false;
 //     ticking = true;
 //   }
 // });
-let project=document.getElementById('projects')
+// let project=document.getElementById('projects')
 
-const buttonRight = document.getElementById('next-right');
-const buttonLeft = document.getElementById('next-left');
+// const buttonRight = document.getElementById('next-right');
+// const buttonLeft = document.getElementById('next-left');
 
-buttonRight.addEventListener("click",()=>{
+// buttonRight.addEventListener("click",()=>{
     
-    document.getElementById('projects').scrollLeft+=400
-})
+//     document.getElementById('projects').scrollLeft+=400
+// })
 
-buttonLeft.addEventListener("click",()=>{
+// buttonLeft.addEventListener("click",()=>{
     
-    document.getElementById('projects').scrollLeft-=400
-})
+//     document.getElementById('projects').scrollLeft-=400
+// })
  
 // buttonLeft.onclick = function () {
 //   document.getElementById('container').scrollLeft -= 20;
-project.addEventListener('scroll', () => console.log(scrollY))
+// project.addEventListener('scroll', () => console.log(scrollY))
 
 gsheeturl="https://script.google.com/macros/s/AKfycbwZDgwQ7CJqm8WaVxYtCIlQpUZFBFRwHRVOse7qEaHSY72WRZ44neVF9sZNTvR01WTOpg/exec"
 
@@ -56,3 +56,81 @@ form.addEventListener("submit", (e) => {
     });
    
 });
+
+// let wrap=document.getElementById("projects")
+// let fps = new FullPageScroll(wrap);
+// fps.slides.forEach(function(slide, index){
+//   console.log(index)
+//   if (index === fps.currentSlide) {
+//     slideIndicator.className = "active";
+//   } else {
+//     slideIndicator.className = "";
+//   }
+
+// })
+
+const horizontalScrollView = document.getElementById('projects');
+
+
+
+horizontalScrollView.addEventListener('scroll', function() {
+  const scrollX = horizontalScrollView.scrollLeft;
+  const childWidth = horizontalScrollView.clientWidth/4;
+  const childIndex = (scrollX /childWidth);
+  // console.log(childIndex)
+    if(childIndex<=1){
+    document.getElementById("1").classList.add("active")
+  }
+  else{
+    document.getElementById("1").classList.remove("active")
+  }
+  if(childIndex>1&&childIndex<=2){
+    document.getElementById("2").classList.add("active")
+  }
+  else{
+    document.getElementById("2").classList.remove("active")
+  }
+  if(childIndex>2&&childIndex<=3){
+    document.getElementById("3").classList.add("active")
+  }
+  else{
+    document.getElementById("3").classList.remove("active")
+  }
+  if(childIndex>3&&childIndex<=4){
+    document.getElementById("4").classList.add("active")
+  }
+  else{
+    document.getElementById("4").classList.remove("active")
+  }
+  if(childIndex>=4){
+    document.getElementById("4").classList.add("active")
+  }
+  else{
+    document.getElementById("4").classList.remove("active")
+  }
+
+});
+
+let options=document.getElementById("options")
+let mobilechild=document.getElementById("mobilechild")
+let count=0
+console.log(0%2)
+options.addEventListener("click",()=>{
+  count++
+  console.log(count)
+  if(count%2==0){
+    mobilechild.classList.remove("onclick-mobilechild")
+  }
+  else{
+    mobilechild.classList.add("onclick-mobilechild")
+  }
+  
+})
+let navbar=document.getElementById("mobile-nav")
+document.addEventListener("click",(event)=>{
+
+  if (!navbar.contains(event.target) && !mobilechild.contains(event.target)) {
+    count--
+  mobilechild.classList.remove("onclick-mobilechild")
+  }
+})

@@ -27,6 +27,34 @@
                id="resume-link-1" class="nav-link resume"   onclick="window.open('https://drive.google.com/file/d/19xYxmDj0olphzUvpw9utuy9soY5G5p9m/view?usp=sharing')"  >Resume</a></button> 
       </div>
     </nav>
+
+    <div id="mobile-nav">
+      <div id="options">
+         <div class="hamburger one"></div>
+         <div class="hamburger two"></div>
+         <div class="hamburger three"></div>
+         <div class="mobilechild transform" id="mobilechild">
+            <div ><a href="#home"><h4 class="nav-ele">Home</h4></a></div>
+           <div class="nav-link about"><a href="#about"><h4 class="nav-ele">About</h4></a></div>
+
+           <div class="nav-link skills"><a href="#skills"><h4 class="nav-ele">Skills</h4></a></div>
+
+           <div ><a href="#projects"><h4 class="nav-ele">Projects</h4></a></div>
+
+           <div ><a href="#githubs"><h4 class="nav-ele">Github</h4></a></div>
+
+           <div class="nav-link contact"><a href="#contact"><h4 class="nav-ele">Contact</h4></a></div>
+           
+            <button id="resume-button-1"><a  href="files/Sourabh-KT-resume.pdf" target="_blank" download="Sourabh-KT-resume" 
+               id="resume-link-1" class="nav-link resume"   onclick="window.open('https://drive.google.com/file/d/19xYxmDj0olphzUvpw9utuy9soY5G5p9m/view?usp=sharing')"  >Resume</a>
+            </button> 
+         </div>
+      </div>
+      <div>
+         <h1>Sourabh kt</h1>
+      </div>
+      
+    </div>
     <!-- home............... -->
     <div id="home" class="nav-link home">
            <div id="home-img"><img id="wallpaper" src="new wallpaper.jpg" alt=""></div>
@@ -99,7 +127,7 @@
       <h1 id="my-projects">My Projects</h1>
     <div id="projects" class="nav-link projects">
       <!-- project1 -->
-           <div class="project-card">
+           <div class="project-card" id="project-card1">
               <div class="project-imgdiv"><img src="project image/macaw.png" alt=""></div>
               <div>
                <h4 class="project-title">macaw <span>( clone of JCREW.COM )</span></h4>
@@ -172,20 +200,25 @@
         <div>
          <a  class="project-github-link" href="https://github.com/sourabhkt1997/insidious-quiet-2801"  target="_blank"><img src="./images/githublogo.com.png" alt=""></a>
          <a class="project-deployed-link" href="https://fanciful-moxie-ec1001.netlify.app/"  target="_blank"><img src="./images/netlyfylogo.png" alt=""></a>
-
-      </div>
+        </div>
        </div>
-          
      </div>
-     <!-- scroll button -->
-     <div class="next-right" id="next-right">
-         <img src="./images/arrowwhite.png" alt="">
-      </div>
-      <div class="next-left" id="next-left">
-        <img src="./images/arrowwhite.png" alt="">
-      </div>
 
-      </div>
+     <div class="scroll-indicator">
+      <a href="#project-card1"><div id="1" class="round"></div></a>
+      <a href="#project-card2"><div id="2"class="round"></div></a>
+      <a href="#project-card3"><div id="3"class="round"></div></a>
+      <a href="#project-card4"><div id="4"class="round"></div></a>
+    </div>
+     <!-- scroll button -->
+         <!-- <div class="next-right" id="next-right">
+         <img src="./images/arrowwhite.png" alt="">
+          </div>
+         <div class="next-left" id="next-left">
+        <img src="./images/arrowwhite.png" alt="">
+         </div> -->
+   </div>
+
 
       <!-- github stat................................ -->
       <div class="max-width" id="githubs">
