@@ -114,7 +114,6 @@ horizontalScrollView.addEventListener('scroll', function() {
 let options=document.getElementById("options")
 let mobilechild=document.getElementById("mobilechild")
 let count=0
-console.log(0%2)
 options.addEventListener("click",()=>{
   count++
   console.log(count)
@@ -134,3 +133,6 @@ document.addEventListener("click",(event)=>{
   mobilechild.classList.remove("onclick-mobilechild")
   }
 })
+
+
+

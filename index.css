@@ -1,12 +1,12 @@
 *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0px; 
+    margin: 0px;
     /* color: aliceblue; */
     box-sizing: border-box;
     
 }
 .nav-menu{
-    /* border: 1px solid yellow; */
+  
     display: flex;
     justify-content: space-around;
     height: 60px;
@@ -39,6 +39,9 @@
     background-color: rgb(25, 22, 22);
     
 }
+.nav-ele:hover{
+    transform: scale(1.2)
+}
 .nav-ele-title{
     margin-top: 10px;
     font-size: 30px;
@@ -48,10 +51,14 @@
     background-color: #b50b0b;
     height: 30px;
     margin-top: 15px;border-radius: 5px;  
+    border: 0px;
 }
 #resume-button-1 a{
     color: #F5F5F5;
     font-weight: bold;
+}
+#resume-button-1:hover{
+    background-color: #e54040;
 }
 
 .title{
@@ -88,7 +95,11 @@
     color:#FAFAFA;
     /* border: 1px solid; */
     width: 80%;
-} 
+
+}
+#user-details-for-smallscreen{
+    display: none;
+}
 #intro{
     position: absolute;
     /* border: 1px solid green; */
@@ -108,16 +119,24 @@
 #nodejs{
     color: rgb(234, 6, 6);
 }
-#resume-link-2{
-    background-color: rgb(245, 50, 50);
-    color: rgb(206, 217, 227);
-    /* border: 0px; */
+#resume-button-2{
+    background-color: red;
     border-radius: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+    padding: 5px;
+    border: 0px;
+}
+#resume-button-2:hover{
+    transform: scale(1.1);
+}
+#resume-link-2{
+    color: rgb(206, 217, 227);
     text-align: center;
     width: 70px;
     height: 25px;
-    margin-top: 10px;
     font-size: 15px;
+    text-decoration: none;
 }
 #about{
     background-color: #3a2b27;
@@ -194,6 +213,7 @@
 .myskill p{
     font-size: 20px;
     text-align: center;
+    padding-bottom: 20px;
     
 }
 .myskill h1>span{
@@ -201,21 +221,24 @@
 }
 
 .skill-div{
-    height: 400px;
+    /* height: 400px; */
     width: 70%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    /* border: 1px solid green; */
+    grid-template-columns: repeat(4,1fr);
     gap: 20px;   
     background-color: rgb(162, 143, 143);
     margin-bottom: 30px;
+    padding: 20px;
+    /* border: 1px solid gold; */
 }
 .skill-card {
    /* border: 1px solid red; */
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-   margin: 5px;
+   /* margin: 5px; */
    border-radius: 10px;
+   width:100%;
+   height:140px ;
 }
 .skill-card img{
     width:40%;
@@ -266,8 +289,8 @@
 }
 .project-card{
    min-width:480px;
-    /* border: 1px solid blue; */
-    background-color: #F5F5F5;
+  background-color: #F5F5F5;
+   border:1px solid gold;
 }
 .next-right{
     position: absolute;
@@ -289,7 +312,7 @@
     /* z-index: 0;
     bottom: 200px;
     left:11%; */
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 40px
 
 }
@@ -298,7 +321,7 @@
 }
 .project-imgdiv{
     /* border: 1px solid; */
-    height:225px ;
+    /* height:225px ; */
 }
 .project-imgdiv img{
     width: 100%;
@@ -335,13 +358,18 @@
 .project-github-link>img{
     width: 35px;
     margin-top: 5px;
-    /* border: 1px solid; */
     margin-left: 10px;
+}
+.project-github-link>img:hover{
+    transform: scale(1.2)
 }
 .project-deployed-link>img{
     width: 32px;
     /* border: 1px solid; */
     margin-left: 10px;
+}
+.project-deployed-link>img:hover{
+    transform: scale(1.2);
 }
 
 /* git gub....................... */
@@ -573,7 +601,8 @@ margin-left: 10px;
 
 
 @media only screen and (max-width: 1280px) and (min-width: 650px) {
-   #nav-ele{
+   
+    #nav-ele{
     margin-right: 0%;
     width: 65%;
    }
@@ -586,6 +615,7 @@ margin-left: 10px;
    }
    .skill{
     width: 100%;
+    /* border: 1px solid yellow; */
    }
    #projects{
     width: 90%;
@@ -631,13 +661,14 @@ margin-left: 10px;
    
 }
 
+
 @media only screen and (max-width: 650px) and (min-width: 320px) {
    .nav-menu{
     display: none;
    }
    #mobile-nav{
     width: 100%;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     display: flex;
     position: fixed;
     background-color: black;
@@ -663,14 +694,112 @@ margin-left: 10px;
    .onclick-mobilechild{
     display: block;
     width: 200px;
-    transition: 0.7s;
+    transition: 0.4s;
     transition-timing-function: linear;
     transform: translate(0px);
     opacity: 1;
     
    }
-  
+   .skill-div{
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+   }
+   #about-sub{
+    width: 100%;
+   }
+   .skill{
+    width: 95%;
+    gap: 20px;   
+   }
+   #user-detail-intro{
+    display: none;
+   }
+   #user-details-for-smallscreen{
+    display: block;
+    /* border: 1px solid; */
+    margin-top: 10px;
+    width: 100%;
+    /* display: none; */
+    position: relative;
+    right: 150px;
+    width: 330px;
+    font-weight: 400;
+    top: 50px;
+    
+   }
+   #profile-image{
+    width: 150px;
+    height: 150px;
+   }
+   #profile-image img{
+    margin-top: 0px;
+   }
+   #contact-sub{
+    display: block;
+    /* border: 1px solid yellow; */
+   }
+   #form-div{
+    /* border: 1px solid yellow; */
+    width: 80%;   
+   }
+   #form input,textarea{
+    background-color: rgb(190, 192, 195);
+    display:flex;
+    border-radius: 5px;
+    width: 100%;
+   }
+   #user-detail-name{
+    /* border: 1px solid red; */
+    font-size: 37px;
+    /* padding-right:50px ; */
+    position: relative;
+    right: 25px;
+   }
+   #resume-button-2{
+    position: relative;
+    right: 25px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+   }
+   #fill-form{
+    display: none;
+   }
+   #iam-sourabh{
+    font-size:25px;
+   }
+   .myskill h1{
+    padding-top: 50px;
+   }
+   #intro h4{
+    position: relative;
+    right: 20px;
+   }
+   /* #iam-sourabh span{
+    display: block;
+    /* font-size: 35px; */
+    /* border: 1px solid; */ 
+   #iam-sourabh{
+    margin-top: 0px
+   }
+   #projects{
+    width: 90%;
+    }
+    .project-card{
+        min-width:350px;
+       background-color: #F5F5F5;
+        border:1px solid gold;
+     }
+}
+
+
+   @media only screen and (max-width: 528px) and (min-width: 320px) {
+    #user-details-for-smallscreen{
+        position: relative;
+        top: 10px; 
+       }
+     }
 
    
    
-}
+
