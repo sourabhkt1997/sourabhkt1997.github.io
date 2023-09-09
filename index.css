@@ -15,6 +15,7 @@
     background-color:rgb(30, 29, 29);
     width: 100vw;
     position: fixed;
+   
 }
 .nav-menu-event{
  background-color: rgb(240, 233, 233);
@@ -45,7 +46,7 @@
 .nav-ele-title{
     margin-top: 10px;
     font-size: 30px;
-    /* border: 1px solid black; */
+    /* border: 1px solid rgb(167, 197, 16); */
 }
 #resume-button-1{
     background-color: #b50b0b;
@@ -105,6 +106,7 @@
     /* border: 1px solid green; */
     top: 30%;
     left: 17%;
+    max-width: 80%;
     
 }
 #hello{
@@ -152,7 +154,6 @@
     justify-content: space-around;
     min-height: 400px;
     
-
 }
 #profile-image{
     width: 20%;
@@ -416,6 +417,7 @@
 #contact{
     background-color: #312f2f;
     padding-top: 50px;
+    border: 1px solid #312f2f;
 }
 #contact-icon{
     /* border: 1px solid white; */
@@ -611,7 +613,7 @@ margin-left: 10px;
    }
    #about-sub{
     width: 100%;
-    min-height: 450px;
+    /* min-height: 450px; */
    }
    .skill{
     width: 100%;
@@ -662,7 +664,7 @@ margin-left: 10px;
 }
 
 
-@media only screen and (max-width: 650px) and (min-width: 320px) {
+@media only screen and (max-width: 650px) {
    .nav-menu{
     display: none;
    }
@@ -712,8 +714,14 @@ margin-left: 10px;
     gap: 20px;   
    }
    #user-detail-intro{
-    display: none;
+    /* display: none; */
+    /* border: 1px solid green; */
+    width: 100%;
+    margin-bottom: 20px;
    }
+   /* #intro{
+    border: 1px solid;
+   } */
    #user-details-for-smallscreen{
     display: block;
     /* border: 1px solid; */
@@ -736,10 +744,11 @@ margin-left: 10px;
    }
    #contact-sub{
     display: block;
-    /* border: 1px solid yellow; */
+    margin: auto;
    }
    #form-div{
     /* border: 1px solid yellow; */
+    margin: auto;
     width: 80%;   
    }
    #form input,textarea{
@@ -790,16 +799,95 @@ margin-left: 10px;
        background-color: #F5F5F5;
         border:1px solid gold;
      }
+     #user-detail-intro{
+        position: relative;
+        /* border: 1px solid green; */
+        right: 20px;
+    }
+    #contact-info{
+        /* border: 1px solid green; */
+        padding-top: 50px;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10px;
+
+    }
+    #contact-info h3,p{
+        padding: 5px;
+    }
+    #contact-email>img{
+        display: none;
+    }
+  
+
+
 }
 
 
-   @media only screen and (max-width: 528px) and (min-width: 320px) {
+
+
+
+@media only screen and (max-width:360px) {
+    
+    #about-sub{
+        flex-direction: column;
+         align-items: center;
+
+    }
     #user-details-for-smallscreen{
-        position: relative;
-        top: 10px; 
+        position:initial;
+        width: 100%;
+        margin: auto;
        }
-     }
+       #about-words{
+        width: 90%;
+        text-align: center;
+        margin-top: 50px;
+       }
+       .skill-div{
+        width: 90%;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;   
+        /* border: 1px solid gold; */
+        height: 450px;
+        overflow-y: scroll;
+    }
+    
+    /* #mobilenav-title{
+        border: 1px solid red;
+    } */
+    #mobile-nav{
+        /* width: 100%; */
+        /* border: 1px solid yellow; */
+        display: flex;
+        position: fixed;
+        background-color: black;
+        color: #F5F5F5;
+        z-index: 3;
+       }
+       #user-detail-name{
+        font-size: 30px;  
+        color:#FAFAFA
+          
+      }
+      #form-div{
+        /* border: 1px solid yellow; */
+        width: 100%;
+        
+    }
+    #form #submit{
+      width:130px ;
+      height:20px;
+      font-size: 15px;
+      margin-bottom: 20px;
+
+    } #contact-info{
+        width: 100%;
+      
+    }
 
    
+
+}
    
 
