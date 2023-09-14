@@ -133,6 +133,35 @@ document.addEventListener("click",(event)=>{
   mobilechild.classList.remove("onclick-mobilechild")
   }
 })
+let ele=document.querySelectorAll(".ContributionCalendar-day")
+ele.forEach(function(element) {
+  element.classList.add("gitttd")
+  element.innerHTML=null
+  let dataLevel = element.getAttribute("data-level");
+  if(dataLevel=="1"){
+    element.classList.add("zerogreen")
+    // element.innerHTML=null
+}
+
+  if(dataLevel=="0"){
+      element.classList.add("firstgreen")
+      // element.innerHTML=null
+  }
+  if(dataLevel=="2"){
+    element.classList.add("secondgreen")
+    // element.innerHTML=null
+  }
+  if(dataLevel=="3"){
+    element.classList.add("thirdgreen")
+    // element.innerHTML=null
+  }
+  if(dataLevel=="4"){
+    element.classList.add("forthgreen")
+    // element.innerHTML=null
+  }
+   
+});
+
 
 
 

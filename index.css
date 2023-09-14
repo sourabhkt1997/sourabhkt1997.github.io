@@ -823,7 +823,10 @@ margin-left: 10px;
         display: none;
     }
   
-
+    #stat{
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
 
 }
 
@@ -893,5 +896,46 @@ margin-left: 10px;
    
 
 }
+
+.ContributionCalendar-grid{
+    overflow-y:scroll;
+    /* border: 1px solid; */
+    width: 900px;
+    margin: auto;
+}
+.ContributionCalendar-grid::-webkit-scrollbar{
+   display: none;
+}
+
+/* .gitttd{
+    border: 1px solid;
+    width: 3px;
+    height: 5px;
+} */
+.zerogreen{
+    background-color: #9da29a;
+}
+
+.firstgreen{
+    background-color: #98f075;
+}
+.secondgreen{
+    background-color: #5eac40;
+}
+.thirdgreen{
+    background-color: #2b6614;
+}
+.forthgreen{
+    background-color: #113105;
+}
+.sr-only{
+    display: none;
+}
+.ContributionCalendar-label>span:nth-child(2){
+  /* border: 1px solid; */
+  
+}
+
+
    
 
