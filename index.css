@@ -935,6 +935,11 @@ margin-left: 10px;
   /* border: 1px solid; */
   
 }
+.contrib-column{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+}
 
 
    
