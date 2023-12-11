@@ -335,6 +335,8 @@
     font-weight:500;
     color: rgb(59, 56, 56);
     margin-top: 10px;
+    height:50px;
+    overflow-y: scroll;
 }
 .project-description>span{
     padding-left: 10px;
